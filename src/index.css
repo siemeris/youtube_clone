@@ -5,6 +5,12 @@ body {
   box-sizing: border-box;
 }
 
+/* Quitamos el underline de los enlaces */
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .search-bar{
   border:none;
   outline:none;
