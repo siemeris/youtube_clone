@@ -4,10 +4,10 @@ import React from 'react'
 import {VideoCard, ChannelCard} from './index'
 
 
-const Videos = ({videos}) => {
+const Videos = ({videos, direction}) => {
     
   return (
-    <Stack direction="row" flexWrap="wrap" justify-content="start" gap={2}>
+    <Stack direction={direction || "row"} flexWrap="wrap" justify-content="start" gap={2}>
         {videos.map((item, idx)=>(
             <Box key={idx}>
                 {item.id.videoId && <VideoCard video={item} />}
