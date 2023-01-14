@@ -13,7 +13,7 @@
 * [Technologies](#computer-technologies)
 * [How to Run](#construction_worker-how-to-run)
 * [Found a bug? Missing a specific feature?](#bug-issues)
-* [Deploymen](#rocket-deployment)
+* [Deployment](#rocket-deployment)
 
 # :computer: Technologies
 This project was made using the follow technologies:
