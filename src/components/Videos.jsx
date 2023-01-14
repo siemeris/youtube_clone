@@ -5,7 +5,9 @@ import {VideoCard, ChannelCard} from './index'
 
 
 const Videos = ({videos, direction}) => {
-    
+  
+  if (!videos?.length) return 'Loading...'
+  
   return (
     <Stack direction={direction || "row"} flexWrap="wrap" justify-content="start" gap={2}>
         {videos.map((item, idx)=>(

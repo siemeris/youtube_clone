@@ -43,20 +43,38 @@ a {
   color: white !important;
 }
 
+.react-player {
+  height: 77vh !important;
+  width: 100% !important;
+}
 
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Para un ancho de pantalla menor de 900px, dar margin a los botones de categoría */
+@media screen and (max-width: 900px) {
+  .category-btn{
+    margin: 10px;
+  }
+}
 
 /* Para un ancho de pantalla menor de 800px no se muestra el texto 'Made by ISM' */
 @media screen and (max-width:800px){
   .copyright{
     display:none !important;
   }
-}
-
-
-.react-player {
-  height: 77vh !important;
-  width: 100% !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -71,8 +89,4 @@ a {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .category-btn{
-    margin: 10px;
-  }
-}
+

@@ -10,22 +10,28 @@ const VideoCard = ({
 }) => {
   console.log(video)
   return (
-    <Card sx={{ width: {md: '320px', xs: '100%'}, boxShadow:'none', borderRadius: 0}}>
+    <Card sx={{ width: { xs: '100%', sm: "358px", md: '320px' }, boxShadow: 'none', borderRadius: 0 }}>
       <Link to={video.id.videoId ? `/video/${video.id.videoId}` : demoVideoUrl}>
-        <CardMedia image={video.snippet?.thumbnails?.high?.url} alt={video.snippet?.title} sx={{ width: 358, height: 180 }} />
+        <CardMedia
+          image={video.snippet?.thumbnails?.high?.url}
+          alt={video.snippet?.title}
+          sx={{ width: {
+            xs: "100%", sm: "358px", md: '320px'
+          }, height: 180 }}
+        />
       </Link>
       <CardContent sx={{ backgroundColor: "#1e1e1e", height: "106px" }}>
         <Link to={video.id.videoId ? `/video/${video.id.videoId}` : demoVideoUrl}>
           <Typography variant="subtitle1" fontWeight="bold" color="#FFF">
             {/* Acortamos títulos demasiado grandes */}
-            {video.snippet?.title.slice(0,60) || demoVideoTitle.slice(0,60)}
+            {video.snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
           </Typography>
         </Link>
         <Link to={video.snippet?.channelId ? `/channel/${video.snippet?.channelId}` : demoChannelUrl}>
           <Typography variant="subtitle2" fontWeight="bold" color="gray">
             {/* Acortamos títulos demasiado grandes */}
-            {video.snippet?.channelTitle.slice(0,60) || demoChannelTitle.slice(0,60)}
-            <CheckCircle sx={{fontSize:12, color:"gray", ml:"5px"}} />
+            {video.snippet?.channelTitle.slice(0, 60) || demoChannelTitle.slice(0, 60)}
+            <CheckCircle sx={{ fontSize: 12, color: "gray", ml: "5px" }} />
           </Typography>
         </Link>
       </CardContent>
