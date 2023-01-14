@@ -13,7 +13,7 @@
 * [Technologies](#computer-technologies)
 * [How to Run](#construction_worker-how-to-run)
 * [Found a bug? Missing a specific feature?](#bug-issues)
-* [Deploy](#rocket-deploy)
+* [Deploymen](#rocket-deployment)
 
 # :computer: Technologies
 This project was made using the follow technologies:
@@ -47,7 +47,7 @@ $ npm run start
 Feel free to **create a new issue** with a respective title and description on the [YouTube-Clone-App](https://github.com/siemeris/youtube_clone) repository. If you find a solution to any problem, **I would love to review your pull request**!
 
 
-# :rocket: Deploy
+# :rocket: Deployment
 
 https://youtube-siemeris.netlify.app/
 
